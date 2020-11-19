@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="w-full h-screen">
+        <nav class="w-full h-24 bg-white sticky top-0 px-32 flex items-center justify-between">
+            <div id="logo" class="w-20 h-20">
+                <img src="icon/logo.svg" alt="logo" class="object-contain w-full h-full">
+            </div>
+            <div id="menu" class="flex-1">
+                <ul class="float-right flex space-x-5 text-xs text-gray">
+                    <li class="select"><a href="#" class="px-2 py-1 z-10">HOME</a><img src="icon/triangulo.svg" alt="select" class="triangulo"></li>
+                    <li><a href="#" class="px-2 py-1 z-10">NOSOTROS</a></li>
+                    <li><a href="#" class="px-2 py-1 z-10">PRODUCTOS</a></li>
+                    <li><a href="#" class="px-2 py-1 z-10">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="banner" class="w-full mt-10 flex px-32 items-center">
+            <div class="banner_descripcion w-1/2 px-20">
+                <h1 class="banner_titulo text-blue text-5xl font-semibold">LIAN <br /> DETALLITOS</h1>
+                <p class="banner_texto text-gray text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod!</p>
+                <button class="banner_boton bg-purple text-white mt-10 px-5 py-1 hover:bg-pink-500 focus:outline-none">SERVICIOS</button>
+            </div>
+            <div class="banner_imagen w-1/2 px-20">
+                <img src="imagenes/banner_leon.png" alt="leon">
+            </div>
+        </div>
+        <div class="mx-32 my-20 w-20 h-20 bg-pink rounded-full absolute right-0 bottom-0"></div>
+        <div class="w-64 h-64 bg-green rounded-full absolute top-80 left-50 bottom-0"></div>
+    </header>
 </body>
 </html>

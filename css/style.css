@@ -1,0 +1,75 @@
+/*gray*/
+.text-gray {
+  color: #707070;
+}
+.bg-gray {
+  background-color: #707070;
+}
+
+/*celeste*/
+.text-blue {
+  color: #8BD9F5;
+}
+.bg-blue {
+  background-color: #8BD9F5;
+}
+
+/*verde*/
+.text-green {
+  color: #B8ECFF;
+}
+.bg-green {
+  background-color: #B8ECFF;
+}
+
+/*lila*/
+.text-purple {
+  color: #EE8BDD;
+}
+.bg-purple {
+  background-color: #EE8BDD;
+}
+
+/*rosado*/
+.text-pink {
+  color: #FFC9F5;
+}
+.bg-pink {
+  background-color: #FFC9F5;
+}
+
+/*amarillo*/
+.text-yellow {
+  color: #F5E78B;
+}
+.bg-yellow {
+  background-color: #F5E78B;
+}
+
+.border-blue {
+   border-color: #8BD9F5;
+}
+
+
+/*selecionar*/
+.select {
+  color: white;
+  background-color: #B8ECFF;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+}
+.triangulo {
+  position: absolute;
+  top: 80%;
+}
+
+.top-80 {
+  top: 80%;
+}
+
+.left-50 {
+  left: -10%;
+}
