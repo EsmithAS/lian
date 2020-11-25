@@ -130,3 +130,11 @@
   z-index: -10;
   opacity: 0.25;
 }
+
+.visualizar {
+  opacity: 0;
+  transition: .5s;
+}
+.visualizar:hover {
+  opacity: .75;
+}
