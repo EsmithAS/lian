@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="overflow-x-hidden">
+    <nav class="w-full h-24 bg-white sticky top-0 px-32 flex items-center justify-between z-20">
+        <div id="logo" class="w-20 h-20">
+            <img src="icon/logo.svg" alt="logo" class="object-contain w-full h-full">
+        </div>
+        <div id="menu" class="flex-1">
+            <ul class="float-right flex space-x-5 text-xs text-gray">
+                <li class="select"><a href="#" class="px-2 py-1 z-10">HOME</a><img src="icon/triangulo.svg" alt="select" class="triangulo"></li>
+                <li><a href="#" class="px-2 py-1 z-10">NOSOTROS</a></li>
+                <li><a href="#" class="px-2 py-1 z-10">PRODUCTOS</a></li>
+                <li><a href="#" class="px-2 py-1 z-10">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
     <header class="w-full h-screen">
-        <nav class="w-full h-24 bg-white sticky top-0 px-32 flex items-center justify-between">
-            <div id="logo" class="w-20 h-20">
-                <img src="icon/logo.svg" alt="logo" class="object-contain w-full h-full">
-            </div>
-            <div id="menu" class="flex-1">
-                <ul class="float-right flex space-x-5 text-xs text-gray">
-                    <li class="select"><a href="#" class="px-2 py-1 z-10">HOME</a><img src="icon/triangulo.svg" alt="select" class="triangulo"></li>
-                    <li><a href="#" class="px-2 py-1 z-10">NOSOTROS</a></li>
-                    <li><a href="#" class="px-2 py-1 z-10">PRODUCTOS</a></li>
-                    <li><a href="#" class="px-2 py-1 z-10">CONTACTO</a></li>
-                </ul>
-            </div>
-        </nav>
         <div id="banner" class="w-full mt-10 flex px-32 items-center">
             <div class="banner_descripcion w-1/2 px-20">
                 <h1 class="banner_titulo text-blue text-5xl font-semibold">LIAN <br /> DETALLITOS</h1>
@@ -121,13 +121,13 @@
     </section>
     <section id="products" class="w-full min-h-screen">
         <div class="container mx-auto px-32 relative z-10">
-            <div class="bg-blue w-20 h-20 rounded-full"></div>
+            <div class="bg-green w-20 h-20 rounded-full"></div>
             <h2 class="text-center text-3xl text-blue font-semibold flex items-center flex-col mb-20">
                 <span class="inline-block">Mis Productos</span>
                 <span class="inline-block w-20 h-1 bg-blue"></span>
             </h2>
-            <div id="items-products" class="flex justify-between">
-                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue">
+            <div id="items-products" class="flex flex-wrap justify-between">
+                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue m-8">
                     <div class="w-full h-48 relative">
                         <img src="imagenes/Torta Minnie.jpg" alt="Torta Minnie" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
@@ -150,7 +150,7 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
-                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue">
+                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue m-8">
                     <div class="w-full h-48 relative">
                         <img src="imagenes/Torta Graduacion.jpg" alt="Torta Graduacion" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
@@ -173,7 +173,7 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
-                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue">
+                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue m-8">
                     <div class="w-full h-48 relative">
                         <img src="imagenes/Torta Conche vino.jpg" alt="Torta quinceañera" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
@@ -196,10 +196,117 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
+                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue m-8">
+                    <div class="w-full h-48 relative">
+                        <img src="imagenes/Torta de Mickey.jpg" alt="Torta quinceañera" class="object-contain object-center w-full h-full">
+                        <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
+                            <img src="icon/screen.svg" alt="screen">
+                        </button>
+                    </div>
+                    <div class="px-6 py-4">
+                        <h2 class="text-blue text-lg text-center font-semibold py-2">Torta de Mickey</h2>
+                        <p class="text-gray text-xs text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quam repellendus.</p>
+                        <div class="flex justify-around py-4">
+                            <p class="inline-flex items-center space-x-2">
+                                <img src="icon/time.svg" alt="time" class="w-3 h-3">
+                                <span class="text-xs text-blue">15 min.</span>
+                            </p>
+                            <p class="inline-flex items-center space-x-2">
+                                <img src="icon/price.svg" alt="price" class="w-3 h-3">
+                                <span class="text-xs text-blue">S/. 15.50</span>
+                            </p>
+                        </div>
+                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                    </div>
+                </div> <!--Card producto-->
+                <div id="card-product" class="w-1/4 shadow-lg rounded-b-lg border-t-4 border-blue m-8">
+                    <div class="w-full h-48 relative">
+                        <img src="imagenes/Torta TikTok.jpg" alt="Torta quinceañera" class="object-contain object-center w-full h-full">
+                        <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
+                            <img src="icon/screen.svg" alt="screen">
+                        </button>
+                    </div>
+                    <div class="px-6 py-4">
+                        <h2 class="text-blue text-lg text-center font-semibold py-2">Torta de TikTok</h2>
+                        <p class="text-gray text-xs text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quam repellendus.</p>
+                        <div class="flex justify-around py-4">
+                            <p class="inline-flex items-center space-x-2">
+                                <img src="icon/time.svg" alt="time" class="w-3 h-3">
+                                <span class="text-xs text-blue">15 min.</span>
+                            </p>
+                            <p class="inline-flex items-center space-x-2">
+                                <img src="icon/price.svg" alt="price" class="w-3 h-3">
+                                <span class="text-xs text-blue">S/. 15.50</span>
+                            </p>
+                        </div>
+                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                    </div>
+                </div> <!--Card producto-->
             </div>
-            
+            <div class="w-full py-4 text-center text-sm font-semibold text-blue">
+                <a href="#" class="inline-flex flex-col">
+                    <span>Ver más</span>
+                    <span class="transform rotate-90 inline-block">></span>
+                </a>
+            </div>
         </div>
     </section>
+    <section id="contact" class="w-full min-h-screen relative mb-32">
+        <div class="absolute top-0 right-7 bg-green w-48 h-48 rounded-full"></div>
+        <div class="container mx-auto px-32 relative z-10 pt-20">
+            <h2 class="text-center text-3xl text-blue font-semibold flex items-center flex-col mb-20">
+                <span class="inline-block">Contáctanos</span>
+                <span class="inline-block w-20 h-1 bg-blue"></span>
+            </h2>
+            <form method="POST" action="#" class="w-2/3 mx-auto space-y-5">
+                <div class="w-full">
+                    <label for="nombres" class="w-full relative flex">
+                        <span class="bg-white px-3 absolute top-0 ml-3 -mt-3 text-sm text-blue">Nombres y Apellidos (*)</span>
+                        <input type="text" name="nombres" id="nombres" class="w-full px-2 py-3 outline-none border border-gray-400 focus:border-blue-300 focus:text-blue-400 text-gray transition duration-500">
+                    </label>
+                </div>
+                <div class="w-full flex justify-between">
+                    <label for="correo" class="w-8/12 relative flex">
+                        <span class="bg-white px-3 absolute top-0 ml-3 -mt-3 text-sm text-blue">Correo</span>
+                        <input type="email" name="correo" id="correo" class="w-full px-2 py-3 outline-none border border-gray-400 focus:border-blue-300 focus:text-blue-400 text-gray transition duration-500">
+                    </label>
+                    <label for="celular" class="w-2/10 relative flex">
+                        <span class="bg-white px-3 absolute top-0 ml-3 -mt-3 text-sm text-blue">Celular (*)</span>
+                        <input type="text" name="celular" id="celular" class="w-full px-2 py-3 outline-none border border-gray-400 focus:border-blue-300 focus:text-blue-400 text-gray transition duration-500">
+                    </label>
+                </div>
+                <div class="w-full relative flex">
+                    <span class="bg-white px-3 absolute top-0 ml-3 -mt-3 text-sm text-blue">Descripción (*)</span>
+                    <textarea name="" id="" cols="30" rows="5" class="resize-none w-full px-2 py-3 outline-none border border-gray-400 focus:border-blue-400 focus:3ext-blue-400 text-gray transition duration-500"></textarea>
+                </div>
+                <div class="flex justify-between">
+                    <button class="w-10/12 bg-blue text-white text-lg focus:outline-none hover:bg-blue-300 transiton duration-500">Enviar</button>
+                    <button class="w-16 p-4 rounded-full bg-green-400 flex focus:outline-none hover:bg-green-500 transiton duration-500"><img src="icon/whatsapp.svg" alt="whatsapp"></button>
+                </div>
+            </form> <!--Cont formulario-->
+        </div>
+        <div class="relative w-full -mt-24 bg-red-500">
+            <div class="absolute w-20 h-20 bg-green rounded-full left-0 ml-24 -mt-20"></div>
+            <div class="absolute w-48 h-48 bg-green rounded-full left-0 -ml-20"></div>
+        </div>
+    </section>
+    <footer class="w-full bg-gray py-4">
+        <div class="w-full flex justify-center space-x-2">
+            <a href="#" class="h-5">
+            <img src="icon/facebook.svg" alt="facebook" class="object-contain h-full w-full">
+            </a>
+            <a href="#" class="h-5">
+                <img src="icon/instagram.svg" alt="instagram" class="object-contain h-full w-full">
+            </a>
+            <a href="#" class="h-5">
+                <img src="icon/youtube.svg" alt="youtube" class="object-contain h-full w-full">
+            </a>
+        </div>
+        <span class="block w-16 h-px mx-auto bg-white my-3"></span>
+        <p class="text-white text-center text-sm">
+            Derechos Reservados &copy; 2020
+        </p>
+    </footer>
     <script>
         document.querySelector('.visualizar').addEventListener( 'click' , () => {
             console.log('visualizar');
