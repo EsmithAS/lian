@@ -9,17 +9,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="w-full overflow-x-hidden">
+    <div id="visor" class="transition duration-500 transform scale-0 fixed z-50 bg-black w-full h-screen bg-opacity-75">
+        <div class="w-full h-full p-10 flex justify-center items-start">
+            <img id="visor-img" src="imagenes/Torta Conche vino.jpg" alt="torta" class="object-contain w-full h-full">
+            <button id="btnClose" class="transition duration-500 absolute w-10 h-10 bg-black p-2 mt-5 rounded-full focus:outline-none bg-opacity-75 hover:bg-opacity-100">
+                <img src="icon/cerrar.svg" alt="logo" class="object-contain w-full h-full">
+            </button>
+        </div>
+    </div>
     <nav class="w-full h-24 bg-white sticky top-0 px-10 lg:px-32 flex items-center justify-between z-20 relative">
         <div id="logo" class="w-20 h-20">
             <img src="icon/logo.svg" alt="logo" class="object-contain w-full h-full">
         </div>
-        <button id="btnMenu" class="z-50 block md:hidden"></button>
+        <button id="btnMenu" class="z-40 block md:hidden"></button>
         <div id="menu" class="menu flex-1 absolute md:relative inset-0 md:inset-auto w-full md:top-0">
             <ul class="bg-black md:bg-white bg-opacity-75 float-right w-full md:w-auto flex flex-col items-center justify-center md:flex-row space-x-0 md:space-x-5 space-y-8 md:space-y-0 text-xs text-white md:text-gray-800 pt-24 pb-16 md:py-0 rounded-b-full">
                 <li class="select"><a href="#" class="px-2 py-1 z-10">HOME</a><img src="icon/triangulo.svg" alt="select" class="triangulo"></li>
-                <li><a href="#" class="px-2 py-1 z-10">NOSOTROS</a></li>
-                <li><a href="#" class="px-2 py-1 z-10">PRODUCTOS</a></li>
-                <li><a href="#" class="px-2 py-1 z-10">CONTACTO</a></li>
+                <li><a href="#nosotros" class="px-2 py-1 z-10">NOSOTROS</a></li>
+                <li><a href="#products" class="px-2 py-1 z-10">PRODUCTOS</a></li>
+                <li><a href="#contact" class="px-2 py-1 z-10">CONTACTO</a></li>
             </ul>
         </div>
     </nav>
@@ -28,7 +36,7 @@
             <div class="banner_descripcion w-full sm:w-1/2 px-20 text-center sm:text-left">
                 <h1 class="banner_titulo text-blue text-center sm:text-left text-4xl lg:text-5xl font-semibold">LIAN <br /> DETALLITOS</h1>
                 <p class="banner_texto text-center sm:text-left text-gray text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod!</p>
-                <button class="banner_boton bg-purple text-white mt-10 px-5 py-1 hover:bg-pink-500 focus:outline-none">SERVICIOS</button>
+                <a href="#servicios" class="inline-block banner_boton bg-purple text-white mt-10 px-5 py-1 hover:bg-pink-500 focus:outline-none">SERVICIOS</a>
             </div>
             <div class="banner_imagen sm:w-1/2 px-20">
                 <img src="imagenes/banner_leon.png" alt="leon" class="w-2/3 mx-auto mt-5 sm:mt-0 sm:mx-0 sm:w-auto">
@@ -128,11 +136,11 @@
                 <span class="inline-block w-20 h-1 bg-blue"></span>
             </h2>
             <div id="items-products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20 mx-5 sm:mx-20 md:mx-0">
-                <div id="card-product" class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
-                    <div class="w-full h-48 relative">
+                <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
+                    <div class="header w-full h-48 relative">
                         <img src="imagenes/Torta Minnie.jpg" alt="Torta Minnie" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
-                            <img src="icon/screen.svg" alt="screen">
+                            <img src="icon/screen.svg" alt="screen" class="pointer-events-none">
                         </button>
                     </div>
                     <div class="px-6 py-4">
@@ -151,11 +159,11 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
-                <div id="card-product" class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
-                    <div class="w-full h-48 relative">
+                <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
+                    <div class="header w-full h-48 relative">
                         <img src="imagenes/Torta Graduacion.jpg" alt="Torta Graduacion" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
-                            <img src="icon/screen.svg" alt="screen">
+                            <img src="icon/screen.svg" alt="screen" class="pointer-events-none">
                         </button>
                     </div>
                     <div class="px-6 py-4">
@@ -174,11 +182,11 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
-                <div id="card-product" class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
-                    <div class="w-full h-48 relative">
+                <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
+                    <div class="header w-full h-48 relative">
                         <img src="imagenes/Torta Conche vino.jpg" alt="Torta quinceañera" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
-                            <img src="icon/screen.svg" alt="screen">
+                            <img src="icon/screen.svg" alt="screen" class="pointer-events-none">
                         </button>
                     </div>
                     <div class="px-6 py-4">
@@ -197,11 +205,11 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
-                <div id="card-product" class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
-                    <div class="w-full h-48 relative">
+                <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
+                    <div class="header w-full h-48 relative">
                         <img src="imagenes/Torta de Mickey.jpg" alt="Torta quinceañera" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
-                            <img src="icon/screen.svg" alt="screen">
+                            <img src="icon/screen.svg" alt="screen" class="pointer-events-none">
                         </button>
                     </div>
                     <div class="px-6 py-4">
@@ -220,11 +228,11 @@
                         <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
-                <div id="card-product" class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
-                    <div class="w-full h-48 relative">
+                <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
+                    <div class="header w-full h-48 relative">
                         <img src="imagenes/Torta TikTok.jpg" alt="Torta quinceañera" class="object-contain object-center w-full h-full">
                         <button class="visualizar absolute w-full inset-0 flex items-center justify-center bg-gray-900 focus:outline-none">
-                            <img src="icon/screen.svg" alt="screen">
+                            <img src="icon/screen.svg" alt="screen" class="pointer-events-none">
                         </button>
                     </div>
                     <div class="px-6 py-4">
