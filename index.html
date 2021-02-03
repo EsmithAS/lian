@@ -156,7 +156,7 @@
                                 <span class="text-xs text-blue">S/. 15.50</span>
                             </p>
                         </div>
-                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                        <button class="pedir w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
                 <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
@@ -179,7 +179,7 @@
                                 <span class="text-xs text-blue">S/. 15.50</span>
                             </p>
                         </div>
-                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                        <button class="pedir w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
                 <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
@@ -202,7 +202,7 @@
                                 <span class="text-xs text-blue">S/. 15.50</span>
                             </p>
                         </div>
-                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                        <button class="pedir w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
                 <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
@@ -225,7 +225,7 @@
                                 <span class="text-xs text-blue">S/. 15.50</span>
                             </p>
                         </div>
-                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                        <button class="pedir w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
                 <div class="w-full shadow-lg rounded-b-lg border-t-4 border-blue">
@@ -248,7 +248,7 @@
                                 <span class="text-xs text-blue">S/. 15.50</span>
                             </p>
                         </div>
-                        <button class="w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
+                        <button class="pedir w-full text-blue text-sm border border-blue py-1 hover:bg-blue-300 focus:outline-none hover:text-white transition duration-500">Pedir</button>
                     </div>
                 </div> <!--Card producto-->
             </div>
@@ -267,7 +267,7 @@
                 <span class="inline-block">Contáctanos</span>
                 <span class="inline-block w-20 h-1 bg-blue"></span>
             </h2>
-            <form method="POST" action="#" class="w-full md:w-4/5 lg:w-2/3 mx-auto space-y-5">
+            <div method="POST" action="#" class="w-full md:w-4/5 lg:w-2/3 mx-auto space-y-5">
                 <div class="w-full">
                     <label for="nombres" class="w-full relative flex">
                         <span class="bg-white px-3 absolute top-0 ml-3 -mt-3 text-sm text-blue">Nombres y Apellidos (*)</span>
@@ -286,13 +286,13 @@
                 </div>
                 <div class="w-full relative flex">
                     <span class="bg-white px-3 absolute top-0 ml-3 -mt-3 text-sm text-blue">Descripción (*)</span>
-                    <textarea name="" id="" cols="30" rows="5" class="resize-none w-full px-2 py-3 outline-none border border-gray-400 focus:border-blue-400 focus:3ext-blue-400 text-gray transition duration-500"></textarea>
+                    <textarea name="" id="descripcion" cols="30" rows="5" class="resize-none w-full px-2 py-3 outline-none border border-gray-400 focus:border-blue-400 focus:text-blue-400 text-gray transition duration-500"></textarea>
                 </div>
                 <div class="flex justify-between space-x-5 sm:space-x-0">
-                    <button class="w-10/12 bg-blue text-white text-lg focus:outline-none hover:bg-blue-300 transiton duration-500">Enviar</button>
-                    <button class="w-16 p-4 rounded-full bg-green-400 flex focus:outline-none hover:bg-green-500 transiton duration-500"><img src="icon/whatsapp.svg" alt="whatsapp"></button>
+                    <button id="btnEnviar" class="w-10/12 bg-blue text-white text-lg focus:outline-none hover:bg-blue-300 transiton duration-500">Enviar</button>
+                    <button id="btnWhatsApp" class="w-16 p-4 rounded-full bg-green-400 flex focus:outline-none hover:bg-green-500 transiton duration-500"><img src="icon/whatsapp.svg" alt="whatsapp"></button>
                 </div>
-            </form> <!--Cont formulario-->
+            </div> <!--Cont formulario-->
         </div>
         <div class="relative w-full -mt-24 bg-red-500">
             <div class="absolute w-20 h-20 bg-green rounded-full left-0 ml-24 -mt-20"></div>
