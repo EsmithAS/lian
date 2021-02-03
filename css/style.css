@@ -77,10 +77,12 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 0.25rem;
+  transition: .5s;
 }
 .triangulo {
   position: absolute;
   top: 80%;
+  transition: .5s;
 }
 
 /*modificaciones*/
