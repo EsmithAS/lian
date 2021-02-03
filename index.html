@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <link rel="shortcut icon" href="icon/logo.ico" type="image/x-icon">
     <title>Lian</title>
@@ -19,7 +20,7 @@
         </div>
     </div>
     <nav class="w-full h-24 bg-white sticky top-0 px-10 lg:px-32 flex items-center justify-between z-20 relative">
-        <div id="logo" class="w-20 h-20">
+        <div id="logo" class="w-12 sm:w-16 md:w-20 h-12 sm:h-16 md:h-20">
             <img src="icon/logo.svg" alt="logo" class="object-contain w-full h-full">
         </div>
         <button id="btnMenu" class="z-40 block md:hidden"></button>
@@ -33,13 +34,13 @@
         </div>
     </nav>
     <header id="home" class="section w-full h-screen">
-        <div id="banner" class="w-full mt-10 flex flex-col sm:flex-row px-0 lg:px-32 items-center">
-            <div class="banner_descripcion w-full sm:w-1/2 px-20 text-center sm:text-left">
-                <h1 class="banner_titulo text-blue text-center sm:text-left text-4xl lg:text-5xl font-semibold">LIAN <br /> DETALLITOS</h1>
-                <p class="banner_texto text-center sm:text-left text-gray text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod!</p>
+        <div id="banner" class="w-full mt-0 sm:mt-8 lg:mt-10 flex flex-col sm:flex-row px-0 lg:px-32 items-center">
+            <div class="banner_descripcion w-full sm:w-1/2 px-5 sm:px-20 text-center sm:text-left">
+                <h1 class="banner_titulo text-blue text-center sm:text-left text-3xl sm:text-4xl lg:text-5xl font-semibold">LIAN <br /> DETALLITOS</h1>
+                <p class="banner_texto text-center sm:text-left text-gray text-xs sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod!</p>
                 <a href="#servicios" class="inline-block banner_boton bg-purple text-white mt-10 px-5 py-1 hover:bg-pink-500 focus:outline-none">SERVICIOS</a>
             </div>
-            <div class="banner_imagen sm:w-1/2 px-20">
+            <div class="banner_imagen sm:w-1/2 px-5 sm:px-20">
                 <img src="imagenes/banner_leon.png" alt="leon" class="w-2/3 mx-auto mt-5 sm:mt-0 sm:mx-0 sm:w-auto">
             </div>
         </div>
@@ -47,7 +48,7 @@
         <div class="w-48 h-48 sm:w-56 md:w-64 lg:w-70 sm:h-56 md:h-64 lg:h-70 bg-green rounded-full absolute top-70 left-10 -ml-10 sm:-ml-5 lg:ml-5 bottom-0 mt-16 sm:mt-0"></div>
     </header>
     <section id="nosotros" class="section w-full min-h-screen relative">
-        <div class="container mx-auto px-10 sm:px-20 lg:px-32 relative z-10">
+        <div class="container mx-auto px-8 sm:px-20 lg:px-32 relative z-10">
             <div id="somos" class="w-full md:w-3/4 mx-auto space-y-5 pt-10 relative z-10">
                 <h2 class="text-3xl text-center md:text-left text-blue font-semibold">¿Quienes somos?</h2>
                 <p class="text-gray text-base">
@@ -58,12 +59,12 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati accusantium nihil veritatis magnam. Ipsa neque totam nulla labore, rerum voluptatum eveniet asperiores odit et, ipsam nesciunt animi sint libero. Distinctio laborum nam debitis magnam.
                 </p>
-                <div class="flex justify-between mt-5">
-                    <div class="w-4/5 flex flex-col justify-center">
-                        <h3 class="text-blue font-semibold text-lg">~ Lisbeth Sánchez</h3>
-                        <p class="text-purple px-4 text-xs">Repostera & Chef</p>
+                <div class="flex justify-between mt-5 flex-col sm:flex-row items-center">
+                    <div class="w-full sm:w-4/5 flex flex-col justify-center items-center sm:items-start">
+                        <h3 class="text-blue font-semibold text-md sm:text-lg">~ Lisbeth Sánchez</h3>
+                        <p class="text-purple px-4 text-xs sm:text-xs">Repostera & Chef</p>
                     </div>
-                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-blue border-dashed">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-blue border-dashed mt-5 sm:mt-0">
                         <img src="imagenes/avatar_lisbeth.jpg" alt="avatar_lisbeth" class="object-cover object-top w-full h-full p-2 rounded-full">
                     </div>
                 </div>
@@ -109,20 +110,20 @@
     <section id="servicios" class="w-full min-h-screen relative mt-32 sm:mt-20 py-32">
         <div class="relative bg-pink-200 md:bg-transparent md:absolute inset-0 container mx-auto z-10 flex flex-col md:flex-row items-center justify-around">
             <div class="item-service w-2/4 md:w-1/4 flex flex-col items-center justify-center my-10 md:mb-48">
-                <img src="icon/cookie.svg" alt="cookie" class="w-24 md:w-20 lg:w-24">
-                <p class="text-base md:text-sm lg:text-base text-purple mt-8 text-center">
+                <img src="icon/cookie.svg" alt="cookie" class="w-16 sm:w-24 md:w-20 lg:w-24">
+                <p class="text-sm sm:text-base md:text-sm lg:text-base text-purple mt-8 text-center">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint beatae saepe odit non voluptates.
                 </p>
             </div>
             <div class="item-service w-2/4 md:w-1/4 flex flex-col items-center justify-center my-10 md:mt-48">
-                <img src="icon/baby-carriage.svg" alt="baby-carriage" class="w-24 md:w-20 lg:w-24">
-                <p class="text-base md:text-sm lg:text-base text-purple mt-8 text-center">
+                <img src="icon/baby-carriage.svg" alt="baby-carriage" class="w-16 sm:w-24 md:w-20 lg:w-24">
+                <p class="text-sm sm:text-base md:text-sm lg:text-base text-purple mt-8 text-center">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint beatae saepe odit non voluptates.
                 </p>
             </div>
             <div class="item-service w-2/4 md:w-1/4 flex flex-col items-center justify-center my-10 md:mb-48">
-                <img src="icon/candy.svg" alt="candy" class="w-24 md:w-20 lg:w-24">
-                <p class="text-base md:text-sm lg:text-base text-purple mt-8 text-center">
+                <img src="icon/candy.svg" alt="candy" class="w-16 sm:w-24 md:w-20 lg:w-24">
+                <p class="text-sm sm:text-base md:text-sm lg:text-base text-purple mt-8 text-center">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint beatae saepe odit non voluptates.
                 </p>
             </div>
@@ -130,7 +131,7 @@
         <img src="icon/wave-servicios.svg" alt="wave-servicios" class="hidden md:block lg:object-contain object-center w-full h-full">
     </section>
     <section id="products" class="section w-full min-h-screen">
-        <div class="container mx-auto px-10 sm:px-20 lg:px-32 relative z-10">
+        <div class="container mx-auto px-4 sm:px-20 lg:px-32 relative z-10">
             <div class="bg-green w-20 h-20 rounded-full"></div>
             <h2 class="text-center text-3xl text-blue font-semibold flex items-center flex-col mb-20">
                 <span class="inline-block">Mis Productos</span>
@@ -263,7 +264,7 @@
     </section>
     <section id="contact" class="section w-full min-h-screen relative mb-32">
         <div class="absolute top-0 right-7 bg-green w-48 h-48 rounded-full"></div>
-        <div class="container mx-auto px-16 md:px-20 lg:px-32 relative z-10 pt-20">
+        <div class="container mx-auto px-8 md:px-20 lg:px-32 relative z-10 pt-20">
             <h2 class="text-center text-3xl text-blue font-semibold flex items-center flex-col mb-20">
                 <span class="inline-block">Contáctanos</span>
                 <span class="inline-block w-20 h-1 bg-blue"></span>
@@ -300,7 +301,7 @@
             <div class="absolute w-48 h-48 bg-green rounded-full left-0 -ml-20"></div>
         </div>
     </section>
-    <footer class="w-full bg-gray py-4">
+    <footer class="relative w-full bg-gray py-4 z-50">
         <div class="w-full flex justify-center space-x-2">
             <a href="#" class="h-5">
             <img src="icon/facebook.svg" alt="facebook" class="object-contain h-full w-full">
